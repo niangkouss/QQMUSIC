@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移动端QQ音乐练习</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0 user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/music.css">
+</head>
+<body>
+<script>
+    var winWidth = document.documentElement.clientWidth || document.body.clientWidth;
+    document.documentElement.style.fontSize = winWidth/640*100+'px';/*这里要加px,因为渲染都是进过'px'的*/
+    window.htmlFontSize = winWidth/640*100;
+</script>
+<div class="music Jmusic">
+	<img src="./images/poster.png" alt="" class="bg">
+	<audio src="./images/李荣浩%20-%20模特.mp3" preload="none" style="display: none"></audio>
+
+	<div class="header Jheader clear">
+		<div class="left clear">
+			<img src="./images/ronghaoli.jpg">
+			<div class="info Jinfo">
+				<p>模特</p>
+				<p>李荣浩</p>
+			</div>
+		</div>
+		<div class="right">
+			<span></span>
+		</div>
+	</div>
+
+	<div class="main Jmain">
+		<div class="move Jmove">
+			<!-- <p>sdhihdoiudoidjsaldkwje</p>
+			<p>sdhihdoiudoidjsaldkwje</p>
+			<p>sdhihdoiudoidjsaldkwje</p>-->
+		</div>
+	</div>
+
+	<div class="footer Jfooter clear">
+		<a href="JAVASCRIPT:;" class="like Jlike"></a>
+		<div class="barbox Jbarbox clear">
+			<span class="curTime JcurTime">03:23</span>
+			<div class="bar Jbar">
+				<span></span>
+			</div>
+			<span class="totalTime JtotalTime">03:23</span>
+		</div>
+		<div class="logo Jlogo">
+			请下载这首歌
+			<i></i>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script src="./js/zepto.js"></script>
+<script src="./js/music.js"></script>

@@ -1,0 +1,194 @@
+html {
+	font-size: 100px;
+}
+
+html, body, .music {
+	width: 100%;
+	height: 100%;
+}
+
+.bg {
+	width: 100%;
+	height: 100%;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.header {
+	height: 1.2rem;
+	padding: 0.3rem;
+	position: relative;
+}
+
+.left {
+	width: 2.4rem;
+	height: 1.2rem;
+}
+
+.left img {
+	width: 1.2rem;
+	height: 1.2rem;
+	display: block;
+	float: left;
+}
+
+.info {
+	float: left;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.info p {
+	width: 1rem;
+	height: 0.6rem;
+	padding-left: 0.2rem;
+	line-height: 0.6rem;
+	color: #fff;
+	font-size: 0.3rem;
+}
+
+.right {
+	position: absolute;
+	right: 0.25rem;
+	top: 0.4rem;
+	width: 0.5rem;
+	height: 0.56rem;
+	padding: 0.2rem;
+	border: 0.03rem solid #fff;
+	border-radius: 50%;
+	float: right;
+	cursor: pointer; /*这个一定要放在后面才有用*/ /* overflow: hidden;*//*看来只有对边界才有用*/
+}
+
+.right span {
+	background: url("../images/player.png");
+	background-size: 2.64rem 20rem;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.main {
+	margin: 0.8rem 0;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 3rem;
+}
+
+.move {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s; /*CSS能先设置好,动态识别,如果有变化,是JS改变的CSS变化就能缓慢动画时间*/
+}
+
+.main p {
+	color: rgba(255, 255, 255, .5);
+	height: 0.84rem;
+	line-height: 0.84rem;
+	text-align: center;
+	letter-spacing: 0.04rem;
+	font-size: 0.32rem;
+}
+
+.main .cur {
+	color: #89fa27; /*权重不够除了差错*/
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	height: 3rem;
+	margin: 0.2rem;
+	width: 100%;
+}
+
+.like {
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	float: right;
+	margin-right: 0.55rem; /*  border: 1px solid #000;*/
+	background: url("../images/player.png");
+	background-position: 0 -1.9rem;
+	background-size: 2.64rem 20rem;
+	cursor: pointer;
+	margin-left: 20rem;
+}
+
+.barbox {
+	height: 0.8rem;
+	font-size: 0;
+	margin-top: 0.5rem;
+}
+
+.bar {
+	display: inline-block;
+	vertical-align: middle;
+	width: 4.2rem;
+	height: 0.04rem;
+	background-color: rgba(255, 255, 255, .5);
+	position: relative;
+	margin: 0 0.1rem;
+}
+
+.bar span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	background: #89fa27;;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.totalTime, .curTime {
+	width: 0.9rem;
+	height: 0.9rem;
+	color: rgba(255, 255, 255, .5);
+	text-align: center;
+	line-height: 0.9rem;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.24rem;
+}
+
+.logo {
+	width: 4.4rem;
+	height: 0.9rem;
+	color: #fff;
+	background-color: #31c27c;
+	font-size: 0.36rem;
+	border-radius: 0.45rem;
+	text-align: center;
+	line-height: 0.9rem;
+	position: absolute;
+	bottom: 0.28rem;
+	left: 50%;
+	margin-left: -2.2rem;
+	cursor: pointer;
+}
+
+.logo i {
+	display: block;
+	position: absolute;
+	left: 0.2rem;
+	top: 0.14rem;
+	width: 0.66rem;
+	height: 0.66rem;
+	border-radius: 50%;
+	overflow: hidden;
+	background: url("../images/icon.jpg") center;
+	background-size: 1.2rem 1.2rem;
+}
